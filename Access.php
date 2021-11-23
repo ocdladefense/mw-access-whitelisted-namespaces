@@ -15,6 +15,7 @@ class Access {
 
         global $wgWhitelistedNamespaces, $wgExtraNamespaces, $wgRequest;
 
+        // Global "$wgTitle" is deprecated, so I am getting the title as a string, from the request.
         $title = $wgRequest->getVal("title");
 
         $standardNamespaces = array(0 => null, -1 => "Special");
