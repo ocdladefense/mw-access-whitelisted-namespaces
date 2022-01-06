@@ -2,7 +2,7 @@
 
 
 # Autoload classes and files
-require(__DIR__ . "/Access.php");
+$wgAutoloadClasses["AccessWhitelistedNamespaces\Access"] = __DIR__ . '/Access.php';
 
 
 // Register Hooks
